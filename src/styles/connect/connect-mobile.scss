@@ -1,0 +1,50 @@
+@import '../variables.scss';
+
+@media (max-width: $breakPointTwo) {
+
+    .connect {
+        padding-top: 60px;
+        padding-bottom: 45px;
+
+        &__title.title {
+            margin-bottom: 20px;
+        }
+
+        &__desc {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &__content {
+            margin-bottom: 40px;
+        }
+
+        .mail__title,
+        .mail__value {
+            font-size: 18px;
+            line-height: 28px;
+
+        }
+
+        &__form {
+            min-width: auto;
+            width: 100%;
+        }
+
+        &__bottom {
+            margin-top: 40px;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            a {
+                text-align: center;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                margin-bottom: 15px;
+            }
+        }
+
+
+    }
+}

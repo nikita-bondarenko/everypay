@@ -1,0 +1,16 @@
+@mixin normText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@mixin boldText {
+    font-weight: 700;
+}
+
+@mixin gradientText {
+    color: transparent;
+    background-image: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

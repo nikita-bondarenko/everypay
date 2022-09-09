@@ -1,0 +1,14 @@
+@media (max-width: 1100px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    [class*="lines"] {
+        display: none;
+    }
+
+}

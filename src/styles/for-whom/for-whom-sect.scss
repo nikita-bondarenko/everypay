@@ -1,0 +1,51 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.for-whom {
+    margin-bottom: 190px;
+    position: relative;
+
+    &__lines {
+        z-index: -1;
+        position: absolute;
+        right: -103px;
+        bottom: -257px;
+    }
+
+    &__title.title {
+        margin-bottom: 90px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .example {
+        img {
+            align-self: center;
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 12px;
+        }
+
+        &__desc {
+            @include normText;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+    }
+}

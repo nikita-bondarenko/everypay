@@ -1,0 +1,32 @@
+@media (max-width:1100px) {
+    .for-whom {
+
+        margin-bottom: 110px;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__list {
+            justify-content: space-between;
+        }
+
+
+        .example {
+
+            max-width: 197px;
+
+            &__title {
+                margin-bottom: 20px;
+            }
+
+            &__desc {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+    }
+
+
+}

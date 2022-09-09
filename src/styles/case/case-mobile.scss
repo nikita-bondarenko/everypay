@@ -1,0 +1,72 @@
+@import '../variables.scss';
+
+@media (max-width: $breakPointTwo) {
+    .case {
+
+        margin-bottom: 100px;
+
+        &__title.title {
+            margin-bottom: 40px;
+        }
+
+        &__dec {
+            left: -250px;
+        }
+
+        .block {
+
+
+            img {
+                width: 131px;
+                height: 27px;
+            }
+
+
+
+            &__title {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        &__item {
+            min-height: 213px;
+            height: 100%;
+            padding: 20px 16px;
+        }
+
+        .carousel {
+
+            &__slide {
+                padding-left: 8px;
+                padding-right: 8px;
+
+                &:first-child {
+
+                    img {
+                        width: 105px;
+                        height: 25px;
+                    }
+                }
+
+            }
+
+            &__track {
+                padding-left: -8px;
+                padding-right: -8px;
+            }
+
+            &__viewport {
+                margin-bottom: 22px;
+            }
+
+            &__pagination-button {
+                padding: 0px;
+                width: 8px;
+                height: 8px;
+                margin-right: 4px;
+                margin-left: 4px;
+            }
+        }
+    }
+}

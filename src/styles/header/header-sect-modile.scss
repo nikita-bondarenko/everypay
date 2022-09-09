@@ -1,0 +1,31 @@
+@import '../variables.scss';
+
+@media (max-width: $breakPointTwo) {
+
+    .header {
+        margin-top: 28px;
+        margin-bottom: 55px;
+
+        &__logo {
+            width: 97px;
+            height: 15px;
+        }
+
+        .nav {
+            &__list {
+                margin-bottom: auto;
+                justify-content: space-evenly;
+                height: 100%;
+            }
+
+            &__item:not(:last-child) {
+                margin-bottom: 0px;
+            }
+        }
+
+        .button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

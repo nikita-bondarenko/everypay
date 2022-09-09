@@ -1,0 +1,106 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.case {
+
+    margin-bottom: 160px;
+    position: relative;
+
+    &__dec {
+        z-index: -1;
+        position: absolute;
+        bottom: -429px;
+        left: -158px;
+    }
+
+    &__title.title {
+        margin-bottom: 90px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        [index="0"] img {
+            width: 175px !important;
+            height: 46px !important;
+        }
+    }
+
+    &__item {
+        flex-grow: 1;
+        padding: 30px 24px 20px;
+        display: flex;
+        flex-direction: column;
+        min-height: 297px;
+        max-width: 346px;
+        border: 1px solid $blockb;
+        background: white;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    .block {
+
+        transition: background .2s ease-in-out;
+        background: white;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: -1px;
+            left: -1px;
+            height: 3px;
+            background: transparent;
+            transition: background .2s ease-in-out;
+        }
+
+        &:hover {
+            background: $white;
+            border-color: $white;
+        }
+
+        &:hover:after {
+            background: $blue;
+        }
+
+        img {
+            width: 211.52px;
+            height: 39px;
+        }
+
+        &__title {
+            margin-top: auto;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: inline-block;
+            width: min-content;
+            white-space: nowrap;
+            position: relative;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            padding-right: 15px;
+            @include gradientText;
+
+            span {
+                position: absolute;
+                width: 10px;
+                height: 15px;
+                right: 0;
+                top: 4px;
+            }
+        }
+    }
+
+}

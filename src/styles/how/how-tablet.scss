@@ -1,0 +1,31 @@
+@media (max-width: 1100px) {
+    .how {
+
+        margin-bottom: 120px;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__list {
+            align-items: stretch;
+        }
+
+        &__item {
+            max-width: 205px;
+            justify-content: space-between;
+
+            img {
+                max-width: 180px;
+                max-height: 100px;
+            }
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.443077px;
+        }
+
+    }
+}

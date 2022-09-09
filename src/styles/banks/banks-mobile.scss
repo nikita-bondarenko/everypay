@@ -1,0 +1,50 @@
+@import '../variables.scss';
+
+@media (max-width: $breakPointTwo) {
+    .banks {
+        &__title.title {
+            margin-bottom: 40px;
+        }
+
+        .block {
+            padding: 20px 16px;
+            margin-left: 0;
+            margin-right: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            &__title {
+                margin-bottom: 30px;
+            }
+
+            &__item img {
+                margin-right: 15px;
+                max-width: 34px;
+            }
+        }
+
+        .left__bank {
+            display: flex;
+            align-items: center;
+
+            img {
+                max-width: 100px;
+            }
+        }
+
+        .left__bank:not(:nth-child(2n)) {
+            margin-right: 20px;
+        }
+
+        .left__top {
+            margin-bottom: 20px;
+            padding-bottom: 13px;
+        }
+
+        #bank-0 {
+            margin-left: 0px;
+        }
+    }
+}

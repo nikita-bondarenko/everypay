@@ -1,0 +1,31 @@
+@import '../variables.scss';
+
+@media (max-width: $breakPointTwo) {
+    .auto {
+        background: $cloud;
+        margin-bottom: 140px;
+
+        &__body {
+            overflow: visible;
+            padding: 60px 0px;
+        }
+
+        &__dec {
+            width: 203px;
+            height: 244px;
+            top: -27px;
+            right: -124px;
+        }
+
+        &__desc {
+            margin-bottom: 20px;
+        }
+
+        &__title.title {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+
+    }
+}

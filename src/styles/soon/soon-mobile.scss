@@ -1,0 +1,49 @@
+@import "../variables.scss";
+
+@media (max-width: $breakPointTwo) {
+    .soon {
+        &__title.title {
+            margin-bottom: 40px;
+        }
+
+        &__more {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .item {
+
+            align-items: flex-start;
+
+            &__title {
+                font-size: 18px;
+                line-height: 24px;
+                text-align: start;
+            }
+
+            &__stick {
+                left: -9px;
+                width: 28px;
+            }
+
+            &__content,
+            &__title {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+
+            &__desc {
+                padding: 0;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &__gallery {
+                justify-content: start;
+            }
+
+
+        }
+    }
+}

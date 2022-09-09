@@ -1,0 +1,92 @@
+@import '../variables.scss';
+
+.banks {
+
+    margin-bottom: 160px;
+
+    &__title.title {
+        margin-bottom: 90px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .left {
+        margin-right: 30px;
+
+    }
+
+    .block {
+        border: 1px solid $blockb;
+        padding: 20px 40px 40px;
+        max-width: 534px;
+        flex-grow: 1;
+
+        &__title {
+            color: $blockt;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        &__list {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            img {
+                margin-right: 30px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 45px;
+            }
+        }
+
+    }
+
+    #bank-0 {
+        margin-left: -5px;
+    }
+
+    #bank-2 {
+        margin-left: 3px;
+    }
+
+    .left {
+        &__top {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid $blockb;
+            margin-bottom: 45px;
+            margin-top: -20px;
+            padding-bottom: 20px;
+        }
+
+
+        &__bottom {
+            display: flex;
+            align-items: center;
+        }
+
+        &__bank:not(:nth-child(2n)) {
+            margin-right: 40px;
+        }
+    }
+
+
+    .one-c {
+        &__img {
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+    }
+}

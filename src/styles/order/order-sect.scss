@@ -1,0 +1,104 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+.order {
+
+    margin-bottom: 160px;
+
+    &__list {
+        margin-bottom: 250px;
+    }
+
+    [index="0"],
+    [index="1"] {
+        img {
+            margin-right: 65px;
+        }
+    }
+
+    [index="2"] {
+        img {
+            margin-right: -160px;
+        }
+    }
+
+    [index="3"] {
+        img {
+            margin-top: -100px;
+            margin-right: 50px;
+        }
+    }
+}
+
+.slide {
+
+
+
+    &:not(:last-child) {
+        margin-bottom: 140px;
+    }
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 515px;
+
+    }
+
+    &__desc {
+        @include normText;
+    }
+
+    &__image {
+        display: block;
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+
+    &__form {
+        margin-top: 48px;
+    }
+}
+
+.chat {
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    img {
+        margin-left: -28px;
+        margin-top: -97px;
+    }
+
+    &__lines {
+        position: absolute;
+        right: -162px;
+        top: -264px;
+    }
+
+    &__content {
+        max-width: 515px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    &__desc {
+        max-width: 450px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.443077px
+    }
+}

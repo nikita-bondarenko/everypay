@@ -1,0 +1,23 @@
+@import '../variables.scss';
+
+@media (max-width: $breakPointTwo) {
+    .container {
+        padding-left: 21px;
+        padding-right: 21px;
+
+    }
+
+    .title {
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.44px;
+    }
+
+    .button {
+        width: 108px;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+}

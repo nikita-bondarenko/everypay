@@ -1,27 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <HeaderSect />
+  <main>
+    <OrderSect />
+    <HowSect />
+    <AutoSect />
+    <BanksSect></BanksSect>
+    <ForWhomSect></ForWhomSect>
+    <CaseSect></CaseSect>
+    <RateSect></RateSect>
+    <SoonSect></SoonSect>
+    <SecureSect></SecureSect>
+    <ConnectSect></ConnectSect>
+  </main>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component'
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts" setup>
+import AutoSect from './components/AutoSect.vue'
+import BanksSect from './components/BanksSect.vue'
+import CaseSect from './components/CaseSect.vue'
+import ConnectSect from './components/ConnectSect.vue'
+import ForWhomSect from './components/ForWhomSect.vue'
+import HeaderSect from './components/HeaderSect.vue'
+import HowSect from './components/HowSect.vue'
+import OrderSect from './components/OrderSect.vue'
+import RateSect from './components/RateSect.vue'
+import SecureSect from './components/SecureSect.vue'
+import SoonSect from './components/SoonSect.vue'
+import { store } from '@/store'
+store.getGajetWidth()
 
-@Options({
-  components: {
-    HelloWorld
-  }
+window.addEventListener('resize', () => {
+  store.getGajetWidth()
 })
-export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import '@/styles/fonts.scss';
+@import '@/styles/common/common.scss';
+@import '@/styles/common/common-tablet.scss';
+@import '@/styles/common/common-mobile.scss';
 </style>

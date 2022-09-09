@@ -1,0 +1,25 @@
+@import '../variables.scss';
+
+@media (max-width: $breakPointTwo) {
+    .secure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        margin-bottom: 33px;
+
+        &__title.title {
+            margin-bottom: 40px;
+        }
+
+        &__image {
+            order: -1;
+            margin-bottom: 50px;
+        }
+
+        &__desc {
+            margin-left: 0;
+            letter-spacing: .4px;
+        }
+    }
+}

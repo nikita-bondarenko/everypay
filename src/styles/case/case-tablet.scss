@@ -1,0 +1,85 @@
+@import '../variables.scss';
+
+@media (max-width: 1100px) {
+
+    $gap: 20px;
+
+    .case {
+        margin-bottom: 110px;
+
+        &__dec {
+            left: -113px;
+            transform: scale(.9);
+            bottom: -410px;
+        }
+
+        .carousel {
+            &__viewport {
+                overflow: visible;
+                margin-bottom: 50px;
+            }
+
+            &__track {
+                margin-left: - calc($gap/2);
+                margin-right: - calc($gap/2);
+            }
+
+            &__pagination {
+                padding: 0;
+            }
+
+            &__pagination-button {
+                border-radius: 50%;
+                width: 12px;
+                height: 14px;
+                background-color: transparent;
+                border: 1px solid $blockb;
+                transition: background .2s ease-in-out;
+                margin-right: 7px;
+                margin-left: 7px;
+            }
+
+            &__pagination-button--active {
+                background: $gradient;
+            }
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 0px;
+        }
+
+        .carousel__slide {
+            padding-left: calc($gap/2);
+            padding-right: calc($gap/2);
+            width: calc((100% - 20px)/2);
+
+            .block {
+                &__title {
+                    text-align: left;
+                }
+
+                &:hover {
+                    background: white;
+                    border-color: $blockb;
+                }
+
+                &:hover:after {
+                    background: transparent;
+                }
+            }
+
+            &--active {
+                .block {
+
+                    background: $white;
+                    border-color: $white;
+
+
+                    &::after {
+                        background: $blue;
+                    }
+                }
+            }
+        }
+    }
+}

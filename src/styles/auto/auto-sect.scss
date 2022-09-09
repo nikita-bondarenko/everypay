@@ -1,0 +1,44 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+.auto {
+
+    margin-bottom: 140px;
+
+    &__body {
+        padding: 60px 93px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        background-color: $cloud;
+    }
+
+    &__title {
+        max-width: 370px;
+    }
+
+    &__content {
+        max-width: 440px;
+    }
+
+    &__desc {
+        z-index: 2;
+        @include normText;
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+
+    .form {
+        z-index: 2;
+
+    }
+
+    &__dec {
+        pointer-events: none;
+        z-index: 0;
+        position: absolute;
+        top: 19px;
+        right: 80px;
+    }
+}

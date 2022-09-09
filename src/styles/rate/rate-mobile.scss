@@ -1,0 +1,29 @@
+@import '../variables.scss';
+
+@media (max-width: $breakPointTwo) {
+
+    .rate {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 90px;
+
+        &__title.title {
+            margin-bottom: 40px;
+        }
+
+        &__image {
+            margin-top: -31px;
+            margin-bottom: 50px;
+            order: -1;
+            align-self: start;
+        }
+
+        &__desc {
+            margin-bottom: 40px;
+        }
+
+        &__form {
+            width: 100%;
+        }
+    }
+}

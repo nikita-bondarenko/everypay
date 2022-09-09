@@ -1,0 +1,29 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
+.rate {
+    display: grid;
+    grid-template-columns: 564px auto;
+    justify-content: space-between;
+    grid-gap: 30px;
+    margin-bottom: 160px;
+
+    &__image {
+        margin-top: -43px;
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: 0.443077px;
+    }
+
+    &__title,
+    &__desc,
+    &__form {
+        grid-column: 1/2;
+    }
+}

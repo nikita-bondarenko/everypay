@@ -1,0 +1,118 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.header {
+    margin-top: 35px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        display: block;
+        height: 22px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__connect {
+        position: relative;
+        @include normText;
+        width: 175px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        border: 1px solid transparent;
+        background: white;
+        border-radius: 44px;
+
+        b {
+            @include gradientText;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: -2px;
+            bottom: -2px;
+            right: -2px;
+            left: -2px;
+            background: $gradient;
+            border-radius: 46px;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        flex-grow: 1;
+        color: $light;
+
+    }
+
+    &__link {
+        @include normText;
+        font-size: 14px;
+        line-height: 19px;
+        color: $light;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: rgba(85, 94, 104, 0.5)
+        }
+
+        &:active {
+            color: $blue;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+
+
+.lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    &__item:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    &__link {
+        display: inline-block;
+        color: $gray;
+        @include normText;
+        font-size: 16px;
+        line-height: 22px;
+        opacity: .5;
+        transform: translateY(2px);
+        transition: border .2s ease-in-out, color .2s ease-in-out;
+        background: transparent;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            color: $blue;
+            border-color: $blue;
+        }
+    }
+}
